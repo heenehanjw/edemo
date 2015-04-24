@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Etsydemo</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<!-- Bring in the _header partial file from app/view/layouts/header -->
+
+<%= render 'layouts/header' %>
+
+<!-- Dont need links below anymore because we put them in the navbar above -->
+<!-- <a href="/pages/about">About</a> -->
+<!-- <a href="/pages/contact">Contact</a> -->
+<div class="container">
+ 
+  <%= yield %>
+  <%= render 'layouts/footer' %>
+</div>
+
+</body>
+</html>
