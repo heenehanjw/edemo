@@ -24,6 +24,8 @@ gem 'bootstrap-sass','~> 3.3.4'
 gem 'paperclip', github:'thoughtbot/paperclip'
 gem "paperclip-dropbox", ">= 1.1.7"
 gem "figaro"
+gem "devise"
+gem "rails-i18n", "~> 4.0.0"
 
 
 # bundle exec rake doc:rails generates the API under doc/api.
