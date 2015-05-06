@@ -56,3 +56,11 @@ up by <div class="col-md-3"> in the index.html.erb file.*/
 		margin: 0px;
 	}
 }
+
+/* Sets background image for bootstrap jumbotron banner */
+.jumbotron {
+	background-image: url('jumbotron.jpg');
+	h1,h2 {
+		font-family: guardian-egyptt, georgia, serif;
+	}
+}
