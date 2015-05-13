@@ -1,3 +1,4 @@
+<br><br><br><br>
 <table class="table table-striped table-bordered">
   <tr>
     <th class="center">Image</th>
@@ -10,7 +11,7 @@
 
   <% @listings.each do |listing| %>
     <tr>
-      <td><%= image_tag listing.image.url(:thumb) %>
+      <td><%= link_to image_tag(listing.image.url(:thumb)), listing %></td> 
       <td><%= listing.name %></td>
       <td><%= listing.description %></td>
       <% if user_signed_in? %>

@@ -21,14 +21,16 @@
     <%= f.text_area :description, class: "form-control" %>
   </div>
   <div class="form-group">
-    <%= f.label :price %><br>
-    <%= f.text_field :price, class: "form-control" %>
-  </div>
+    <% if @listing.image.exists? %>
+      <%= f.label "Current image file name: " %><br>
+      <%= image_tag @listing.image_file_name %><br/>
+    <% end %>
+  </div>  
   <div class="form-group">
-    <%= f.label :image %><br>
+    <%= f.label "New image file name: " %><br>
     <%= f.file_field :image, class: "form-control" %>
   </div>
-  
+
   <div class="form-group">
     <%= f.submit class: "btn btn-primary"%>
   </div>
